@@ -1,0 +1,43 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Database
+db.sqlite3
+
+# Environment variables
+.env
+
+# Media and Static
+media/
+static/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Open .gitignore and make sure it has:
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.sqlite3
+.env
+media/
+static/
+.DS_Store
+*.log
+db.sqlite3
