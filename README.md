@@ -2,8 +2,6 @@
 
 Backend API for the Buchi pet adoption platform. This service allows users to search for adoptable pets from both a local PostgreSQL database and TheDogAPI, register as customers, and submit adoption requests.
 
-Built as part of the Kifiya Financial Technology internship assessment.
-
 ## Overview
 
 Buchi is a hybrid pet adoption system that aggregates pet listings from:
