@@ -33,7 +33,7 @@ The system includes customer management with phone-based deduplication, adoption
 - **Analytics Reporting**: Generate reports showing adopted pet types and weekly adoption trends
 - **Photo Optimization**: Automatic image resizing and compression on upload
 - **Redis Caching**: 10-minute TTL on external API responses
-- **Ethiopian Phone Validation**: Supports 09XXXXXXXX and +251XXXXXXXXX formats
+- **Phone Validation**: Supports 09XXXXXXXX and +251XXXXXXXXX formats
 
 ## Quick Start
 
