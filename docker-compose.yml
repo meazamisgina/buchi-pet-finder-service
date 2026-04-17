@@ -1,0 +1,28 @@
+services:
+  db:
+    image: postgres:15
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_DB=buchi_db
+      - POSTGRES_USER=buchi_user
+      - POSTGRES_PASSWORD=buchi_pass
+    ports:
+      - "5432:5432"
+
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=True
+      - DATABASE_URL=postgres://buchi_user:buchi_pass@db:5432/buchi_db
+      - DOG_API_KEY=${DOG_API_KEY}
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
